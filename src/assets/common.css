@@ -1,0 +1,92 @@
+body {
+  font-family: "INGMe", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+h1 {
+  color: #ff6200;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+
+form > * {
+  font-size: 1rem;
+}
+
+input,
+textarea {
+  margin-bottom: 0.5rem;
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle span {
+  cursor: pointer;
+  color: #999;
+}
+
+.toggle .selected {
+  text-decoration: underline;
+  color: #ff6200;
+}
+
+.toggle span:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.message {
+  border: 1px solid;
+  padding: 0.5rem;
+}
+
+.message.success {
+  color: #3a5;
+}
+
+.message.error {
+  color: #a33;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem #ddd;
+  padding: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #5ac;
+  color: #fff;
+}
