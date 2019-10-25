@@ -72,7 +72,7 @@ export default {
         return response.json();
       });
 
-      this.courses = courses;
+      this.courses = courses.map(this.processCourse);
       return courses;
     },
     processCourse(course) {
